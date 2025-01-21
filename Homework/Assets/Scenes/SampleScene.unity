@@ -1216,6 +1216,8 @@ GameObject:
   - component: {fileID: 1076516366}
   - component: {fileID: 1076516365}
   - component: {fileID: 1076516364}
+  - component: {fileID: 1076516368}
+  - component: {fileID: 1076516369}
   m_Layer: 0
   m_Name: Plane (2)
   m_TagString: Untagged
@@ -1313,6 +1315,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
+--- !u!114 &1076516368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076516363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30446504c2083e649bb4d9dbad741e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1076516369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076516363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d13b751d83342f4787c5685cd689178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1273023777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1647,7 @@ GameObject:
   - component: {fileID: 1556069281}
   - component: {fileID: 1556069280}
   - component: {fileID: 1556069279}
+  - component: {fileID: 1556069282}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -1730,6 +1758,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1556069282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556069278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b45b8c5d872bf54ebac006bd999ff53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightComponent: {fileID: 0}
+  action: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1563101732
 GameObject:
   m_ObjectHideFlags: 0
