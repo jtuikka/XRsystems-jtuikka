@@ -5,7 +5,7 @@ public class LightSwitch : MonoBehaviour
 {
     public Light lightComponent;
     public InputActionReference action;
-    private bool swithed = false;
+    private bool switched = false;
     void Start()
     {
         lightComponent = GetComponent<Light>();
@@ -15,13 +15,13 @@ public class LightSwitch : MonoBehaviour
 
     private void ToggleColor(InputAction.CallbackContext ctx) 
     {
-        if(swithed)
+        if(switched)
         {
             lightComponent.color = Color.white;
         }
         else{
             lightComponent.color = Color.red;
         }
-        swithed = !swithed;
+        switched = !switched;
     }
 }
