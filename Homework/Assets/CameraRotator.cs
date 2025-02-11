@@ -1,16 +1,25 @@
 using UnityEngine;
-using UnityEngine.XR;
 
 public class HeadTrackingRotation : MonoBehaviour
 {
-    public Transform headTransform; // Viite pelaajan pään transformiin (VR-kameran Transform)
+    public Transform headTransform;
+    public Transform objectTransform;
+
+    private Quaternion initialObjectRotation;
+
+    private void Start()
+    {
+        if (objectTransform != null)
+        {
+            initialObjectRotation = objectTransform.rotation;
+        }
+    }
 
     private void Update()
     {
-        if (headTransform != null)
+        if (headTransform != null && objectTransform != null)
         {
-            // Kopioi pään rotaatio objektin rotaatioksi
-            transform.rotation = headTransform.rotation;
+            objectTransform.rotation = initialObjectRotation;
         }
     }
 }
